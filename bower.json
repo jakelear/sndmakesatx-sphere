@@ -1,0 +1,17 @@
+{
+  "name": "sphere",
+  "description": "Let the story evolve",
+  "license": "MIT",
+  "homepage": "https://github.com/jakelear/sndmakesatx-sphere",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3"
+  }
+}
