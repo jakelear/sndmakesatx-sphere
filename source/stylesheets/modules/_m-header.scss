@@ -2,4 +2,13 @@ $m: '.m-header';
 
 #{$m} {
   font-family: Georgia, serif;
+
+  &__nav {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title--main {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    font-family: 'Ultra', Georgia, serif;
+  }
 }
