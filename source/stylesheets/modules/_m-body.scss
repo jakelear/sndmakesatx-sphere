@@ -2,10 +2,13 @@ $m: '.m-body';
 
 #{$m} {
   font-family: Georgia, serif;
+  margin-top: 20px;
   .hed{ 
   	font-size: 30px;
   }
   .subhed{
   	font-weight: 700;
+  	margin-bottom: 5px;
+  	margin-top: 25px;
   }
 }
