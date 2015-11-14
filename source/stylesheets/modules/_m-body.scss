@@ -91,4 +91,19 @@ $m: '.m-body';
 	  padding-left: 10px;
 	  padding-top: 10px;
 	}
+
+	.join{
+		padding-right: 10px;
+		font-weight: 700;
+		display: inline-block;
+	}
+
+	.comment-button{
+		background-color: yellow;
+		width: 30px;
+		height: 30px;
+	  	border-radius: 100px;
+	  	display: inline-block;
+	  	position: absolute;
+	}
 }
