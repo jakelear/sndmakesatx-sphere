@@ -26,9 +26,16 @@ $m: '.m-comments';
   }
 
   &__trophy {
+    border-radius: 3px;
+    bottom: 10px;
+    display: block;
+    font-family: sans-serif;
     position: absolute;
     right: 0;
-    bottom: 10px;
+    border: 1px solid #CCC;
+    padding: 5px 5px 0 5px;
+    width: 75px;
+
     svg {
       width: 20px;
       height: 20px;
@@ -37,6 +44,13 @@ $m: '.m-comments';
     &.active svg {
       fill: #EBC426;
     }
+  }
+
+  &__trophy-count {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    text-align: right;
   }
 
   // AVATARS
