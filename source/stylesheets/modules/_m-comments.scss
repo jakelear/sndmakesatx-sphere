@@ -19,10 +19,16 @@ $m: '.m-comments';
 
     &.cdepth-2 {
       margin-left: 40px;
+      .rank & {
+        margin-left: 0;
+      }
     }
 
     &.cdepth-3 {
       margin-left: 80px;
+      .rank & {
+        margin-left: 0;
+      }
     }
   }
 
