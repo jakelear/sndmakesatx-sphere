@@ -24,6 +24,7 @@ $(function() {
 
   // Sort by Rank
   $('.sort.rank').on('click', function(){
+    restoreAllComments();
     var $wrapper = $('.m-comments .columns');
 
     $wrapper.find('.m-comments__item').sort(function (a, b) {
@@ -53,6 +54,11 @@ $(function() {
 
     $('#rank-slider').removeClass('active');
   });
+
+
+  var restoreAllComments = function(){
+    $('.m-comments__item').css('visibility', 'visible');
+  }
 
  // Threshold Filter
  $(document).foundation({
