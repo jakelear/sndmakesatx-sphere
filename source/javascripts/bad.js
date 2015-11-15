@@ -1,6 +1,6 @@
 $(function() {
 
-  $('.promote').on('click', function(){
+  $('.promote, .promote-feature').on('click', function(){
     var comment_headline = $(this).closest('.m-comments__item').find('h2').text();
     var comment_user = $(this).closest('.m-comments__item').find('.poster').text();
 
@@ -10,18 +10,9 @@ $(function() {
     $('#promoted-placement').addClass('active');
   });
 
-  $('.feature').on('click', function(){
-    var findThread = function(){
-
-    }
-
-  });
-
-  $('.promote-feature').on('click', function(){
-
-  });
-
   $('.comment-button').on('click', function(){
+    restoreAllComments();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
     $('.m-featured-discussion').addClass('active');
     $('.m-featured-discussion__overlay').addClass('active');
   });
