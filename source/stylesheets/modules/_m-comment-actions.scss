@@ -2,7 +2,9 @@ $m: '.m-comment-actions';
 
 #{$m} {
   display: none;
-  float: right;
+  position: absolute;
+  right: -200px;
+  top: 25px;
   font-family: sans-serif;
   opacity: 0.6;
   text-transform: uppercase;
