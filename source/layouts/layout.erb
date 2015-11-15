@@ -14,7 +14,8 @@
     <%= javascript_include_tag  "all", "bad" %>
   </head>
 
-  <body class="<%= page_classes %> admin">
+  <body class="<%= page_classes %>">
+    <div class="m-featured-discussion__overlay"></div>
     <%= partial "header" %>
 
     <%= yield %>

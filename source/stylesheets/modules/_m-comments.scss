@@ -113,6 +113,14 @@ $m: '.m-comments';
 
 }
 
+#{$m}__form {
+  padding: 20px;
+  margin-top: 20px;
+  textarea {
+    height: 140px;
+  }
+}
+
 #{$m}__rank-slider {
   background: #EEE;
   border:1px solid #CCC;

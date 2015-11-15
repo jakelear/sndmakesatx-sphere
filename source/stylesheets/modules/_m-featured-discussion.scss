@@ -2,9 +2,24 @@ $m: '.m-featured-discussion';
 
 #{$m} {
   border: 1px solid #CCC;
-  width: 80%;
+  width: 50%;
   right: -100%;
   position: absolute;
   top: 0;
+  padding: 40px;
   background: #FFF;
+  z-index: 11;
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+#{$m}__overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
 }
