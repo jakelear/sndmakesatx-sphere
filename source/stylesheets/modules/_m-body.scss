@@ -3,7 +3,7 @@ $m: '.m-body';
 #{$m} {
   font-family: Georgia, serif;
   margin-top: 20px;
-  .hed{ 
+  .hed{
   	font-size: 30px;
   }
   .subhed{
@@ -102,8 +102,13 @@ $m: '.m-body';
 		background-color: yellow;
 		width: 30px;
 		height: 30px;
-	  	border-radius: 100px;
-	  	display: inline-block;
-	  	position: absolute;
+		border-radius: 100px;
+		display: inline-block;
+		position: absolute;
+		i {
+			color: #777;
+			font-size: 1.25rem;
+			margin-left: 8px;
+		}
 	}
 }
