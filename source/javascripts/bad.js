@@ -21,6 +21,16 @@ $(function() {
 
   });
 
+  $('.comment-button').on('click', function(){
+    $('.m-featured-discussion').addClass('active');
+    $('.m-featured-discussion__overlay').addClass('active');
+  });
+
+  $('#featured-close-btn').on('click', function(){
+    $('.m-featured-discussion').removeClass('active');
+    $('.m-featured-discussion__overlay').removeClass('active');
+  })
+
 
   // Sort by Rank
   $('.sort.rank').on('click', function(){
