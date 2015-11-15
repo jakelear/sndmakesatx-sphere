@@ -57,10 +57,10 @@ window.onload = function() {
     $adminSwitch[0].addEventListener('change', function() {
         var b = document.getElementsByTagName('body')[0];
 
-        if ( b.classList.contains('m-admin') ) {
-            return b.className = b.className.replace( ' m-admin', ' ' );
+        if ( b.classList.contains('admin') ) {
+            return b.className = b.className.replace( ' admin', ' ' );
         }
 
-        return b.className += ' m-admin';
+        return b.className += ' admin';
     });
 }
