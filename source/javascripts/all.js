@@ -9,6 +9,8 @@ window.onload = function() {
     var $comments = document.getElementsByClassName('m-comments__trophy'),
         // converts NodeList to iterable array
         commentsArray = Array.prototype.slice.call( $comments ),
+        $commentsActions = document.getElementsByClassName('m-comment-actions'),
+        actionsArray = Array.prototype.slice.call( $commentsActions ),
         $adminSwitch = document.getElementsByClassName('m-switch');
 
     /**
@@ -50,6 +52,15 @@ window.onload = function() {
         return this.className += ' active';
     }
 
+    function makeTheQuote() {
+        var action = this.childNodes[1].className;
+
+        if ( action === 'fi-quote' ) {
+            var content = this.parentNode.parentNode.parentNode;
+            console.log(content);
+        }
+    }
+
     commentsArray.forEach( function( el ) {
         el.addEventListener('click', trophyIt);
     });
@@ -62,5 +73,11 @@ window.onload = function() {
         }
 
         return b.className += ' admin';
+    });
+
+    actionsArray.forEach( function( el ) {
+        Array.prototype.forEach.call(el.children[0].children, function( button ) {
+            button.addEventListener('click', makeTheQuote);
+        });
     });
 }
