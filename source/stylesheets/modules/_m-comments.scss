@@ -4,6 +4,13 @@ $m: '.m-comments';
   font-family: Georgia, serif;
   font-size: 1rem;
 
+  .sub-nav{
+    background-color: #f2f2f2;
+    padding: 10px 10px 10px 0;
+    width: 50%;
+    float: left;
+  }
+
   h1 {
     font-size: 20px;
   }
@@ -106,3 +113,24 @@ $m: '.m-comments';
 
 }
 
+#{$m}__rank-slider {
+  background: #EEE;
+  border:1px solid #CCC;
+  border-radius: 3px;
+  visibility: hidden;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 30%;
+  float: left;
+  margin-top: -35px;
+  margin-left: 20px;
+
+  .admin &.active {
+    visibility: visible;
+  }
+
+  input {
+    max-width: 60px;
+    float: left;
+  }
+}

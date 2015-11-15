@@ -10,7 +10,8 @@
     <title><%= current_page.data.title || "SNDMakes" %></title>
 
     <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "vendor/jquery.min","all", "bad" %>
+    <%= javascript_include_tag  "vendor/jquery.min", "vendor/foundation.min","vendor/foundation.slider", "vendor/foundation.reveal" %>
+    <%= javascript_include_tag  "all", "bad" %>
   </head>
 
   <body class="<%= page_classes %> admin">

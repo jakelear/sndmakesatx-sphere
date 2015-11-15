@@ -1,7 +1,23 @@
 <section class="m-comments row">
   <h1>Comments <i class="fi-comment"></i></h1>
-  <a class="sort rank">Rank</a>
-  <a class="sort cron">Chronological</a>
+
+  <dl class="sub-nav">
+    <dt>Sort by:</dt>
+    <dd class="active"><a class="sort cron">Chronological</a></dd>
+    <dd><a class="sort rank">Rank</a></dd>
+    <dd><a>Sentiment</a></dd>
+  </dl>
+
+  <div id="rank-slider" class="m-comments__rank-slider">
+    Rank Threshold:
+    <div class="range-slider round" data-slider data-options="display_selector: #rank-threshold; initial: 5;step: 1;">
+      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+      <span class="range-slider-active-segment"></span>
+      <input type="hidden">
+    </div>
+    <input type="number" id="rank-threshold" value="5" step="1" />
+  </div>
+
   <div class="large-8  small-12 columns">
 
     <div id="3396145101" class="m-comments__item cdepth-1" data-trophies="10" data-cron="1">
@@ -22,7 +38,7 @@
         <a class="m-comments__trophy"><%= partial "trophy" %> <span class="m-comments__trophy-count">10</span></a>
         <%= partial "comment-actions" %>
     </div>
-    <div id="339613101" class="m-comments__item cdepth-2">
+    <div id="339613101" class="m-comments__item cdepth-2" data-trophies="4">
         <h2 class="title collapse_toggle ">
           I think given our current roster make up the formation switch would probably be more effective.
         </h2>

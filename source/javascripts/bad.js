@@ -6,6 +6,8 @@ $(function() {
 
     $('#promoted-placement .quote').text(comment_headline);
     $('#promoted-placement .username').text(comment_user);
+
+    $('#promoted-placement').addClass('active');
   });
 
   $('.feature').on('click', function(){
@@ -30,6 +32,10 @@ $(function() {
     .appendTo( $wrapper );
 
     $wrapper.addClass('rank').removeClass('cron');
+    $('dd').removeClass('active');
+    $(this).parent('dd').addClass('active');
+
+    $('#rank-slider').addClass('active');
   });
 
   // Sort by Cron
@@ -42,6 +48,36 @@ $(function() {
     .appendTo( $wrapper );
 
     $wrapper.addClass('cron').removeClass('rank');
+    $('dd').removeClass('active');
+    $(this).parent('dd').addClass('active');
+
+    $('#rank-slider').removeClass('active');
+  });
+
+ // Threshold Filter
+ $(document).foundation({
+  slider: {
+    on_change: function(){
+      var threshold = $('#rank-threshold').val();
+      console.log(threshold);
+      $('.m-comments__item').each(function( index ) {
+        if ( $(this).data('trophies') < threshold ){
+          $(this).css('visibility', 'hidden');
+        } else {
+          $(this).css('visibility', 'visible');
+        }
+      });
+    }
+    }
   });
 
 });
+
+
+SPHERE = {};
+
+SPHERE.filterThreshold = function() {
+
+}
+
+
