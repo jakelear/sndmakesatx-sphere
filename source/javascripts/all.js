@@ -8,7 +8,8 @@
 window.onload = function() {
     var $comments = document.getElementsByClassName('m-comments__trophy'),
         // converts NodeList to iterable array
-        commentsArray = Array.prototype.slice.call( $comments );
+        commentsArray = Array.prototype.slice.call( $comments ),
+        $adminSwitch = document.getElementsByClassName('m-switch');
 
     /**
      * This looks at the element that triggers the event and will
@@ -51,5 +52,15 @@ window.onload = function() {
 
     commentsArray.forEach( function( el ) {
         el.addEventListener('click', trophyIt);
+    });
+
+    $adminSwitch[0].addEventListener('change', function() {
+        var b = document.getElementsByTagName('body')[0];
+
+        if ( b.classList.contains('m-admin') ) {
+            return b.className = b.className.replace( ' m-admin', ' ' );
+        }
+
+        return b.className += ' m-admin';
     });
 }

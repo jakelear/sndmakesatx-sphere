@@ -2,6 +2,7 @@ $m: '.m-header';
 
 #{$m} {
   font-family: Georgia, serif;
+  position: relative;
 
   &__nav {
     margin-bottom: 1.5rem;
@@ -12,7 +13,7 @@ $m: '.m-header';
     font-family: 'Ultra', Georgia, serif;
   }
 
-  .hed{ 
+  .hed{
   	font-size: 45px;
   	line-height: 47px;
   	color: black;
