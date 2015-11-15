@@ -1,0 +1,12 @@
+$m: '.m-comment-actions';
+
+#{$m} {
+  float: right;
+  margin-right: -100px;
+  opacity: 0.6;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  .icon-bar > * i + label {
+    font-size: 0.8rem;
+  }
+}
